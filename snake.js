@@ -1,3 +1,6 @@
+
+document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+
 // Direction of snake movement
 let inputdir = { x: 0, y: 0 };
 
@@ -140,3 +143,4 @@ document.addEventListener('touchend', e => {
 // Start the game
 start_sound.play();
 window.requestAnimationFrame(main);
+
